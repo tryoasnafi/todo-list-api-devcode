@@ -1,23 +1,11 @@
-# Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
-This project was bootstrapped with Fastify-CLI.
+# Todo List API
 
-## Available Scripts
+A challenge project from Devcode - Back-end API Node.js case Todo-list. This is an interesting challenge focused on building a Robust & Performance REST API, you can try [here](https://gethired.id/blog/devcode-talent-hiring/).
 
-In the project directory, you can run:
+## Stacks
 
-### `npm run dev`
+ - [x]  Fastify
+ - [x]  MySQL2
 
-To start the app in dev mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+There are a lot of room for improvement this project, an of them is to implement caching like redis, memcache or  simple cache that you can install in your node.js projectlike `lru-cache`.
 
-### `npm start`
-
-For production mode
-
-### `npm run test`
-
-Run the test cases.
-
-## Learn More
-
-To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).

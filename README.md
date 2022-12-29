@@ -7,5 +7,5 @@ A challenge project from Devcode - Back-end API Node.js case Todo-list. This is 
  - [x]  Fastify
  - [x]  MySQL2
 
-There are a lot of room for improvement this project, an of them is to implement caching like redis, memcache or  simple cache that you can install in your node.js projectlike `lru-cache`.
+There are a lot of room for improvement this project, an one of them is to implement caching like redis, memcache or  simple cache that you can install in your node.js projectlike `lru-cache`.
 

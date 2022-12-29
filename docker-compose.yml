@@ -1,0 +1,40 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    image: asnafi/devcode-todolist-api
+    ports:
+      - 3030:3030
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_DBNAME: db_todolist
+      MYSQL_USER: user_todolist
+      MYSQL_PASSWORD: todo-dbpass
+    links:
+      - db
+    networks:
+      - backend
+    container_name: devcode-todolist-api
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: todo-dbpass
+      MYSQL_DATABASE: db_todolist
+      MYSQL_USER: user_todolist
+      MYSQL_PASSWORD: todo-dbpass
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+    container_name: devcode-todolist-db
+volumes:
+  db:
+networks:
+  backend:
+    driver: bridge
